@@ -41,7 +41,15 @@ Configuration cache cleared!
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=
+DB_DATABASE=laravel_task
+DB_USERNAME=laravel_user
+DB_PASSWORD=password123
+```
+
+## 74. Laravel データベース接続確認
+
+- Laravelにはインストールした時にデータベースのテーブルを作成する仕組みが備わっている
+
+```shell
+$ php artisan migrate
 ```
