@@ -53,3 +53,38 @@ DB_PASSWORD=password123
 ```shell
 $ php artisan migrate
 ```
+
+## 75. Laravelの概要
+
+### MVCモデル
+
+- Model : データベースとやりとり
+- View : 見た目
+- Controller : 処理
+- Routing : アクセスの振り分け
+- Migration : DBテーブルの履歴管理
+
+## 76. Laravel ルート、ビュー
+
+### 画面を表示するまでの流れ
+
+1. routes/web.php
+2. ルートにきたらwelcomeビューを呼び出す
+
+```php
+Route::get('/', function () {
+    return view('welcome');
+});
+```
+
+3. resources/views/welcome.blade.php
+4. ビューを画面に表示する
+
+## 77. Laravel Artisanコマンド
+
+### Artisan (職人)
+
+```shell
+# コマンドのリスト
+$ php artisan list
+```
