@@ -88,3 +88,27 @@ Route::get('/', function () {
 # コマンドのリスト
 $ php artisan list
 ```
+
+## 78. Laravel モデル
+
+### モデル（Model）DBとやりとり
+
+```text
+Eloquent（エロクアント）
+ORM/ORマッパー
+Object-Relational Mapping
+オブジェクト関係マッピング
+
+DBのやりとりをPHPで書ける
+```
+
+```shell
+# この書き方だとappディレクトリ直下に作成される
+$ php artisan make:model Test
+
+# 実際の開発の現場ではModelsの下にphpファイルを作る
+$ php artisan make:model Models/Test
+
+# マイグレーションファイルをまとめて作る
+$ php artisan make:model Models/Test -mc
+```
