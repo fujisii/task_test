@@ -112,3 +112,21 @@ $ php artisan make:model Models/Test
 # マイグレーションファイルをまとめて作る
 $ php artisan make:model Models/Test -mc
 ```
+
+## 79. Laravel マイグレーション
+
+```shell
+# DBテーブルの履歴管理
+# モデルとセットになり、複数形で作成すること
+# 例：Testモデルに対してtestsと複数形で作成すること
+$ php artisan make:migration create_tests_table
+
+# 実際にテーブルを作成する
+$ php artisan migrate
+
+
+$ php artisan migrate:fresh または refresh
+
+# モデルは単数系 マイグレーションは複数形
+# Person -> people
+```
