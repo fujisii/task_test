@@ -130,3 +130,53 @@ $ php artisan migrate:fresh または refresh
 # モデルは単数系 マイグレーションは複数形
 # Person -> people
 ```
+
+## 80. Laravel tinker
+
+### tinker (DB簡易接続)
+
+```shell
+# 対話型でコマンドを打つことができる
+$ php artisan tinker
+Psy Shell v0.9.12 (PHP 7.3.24-(to be removed in future macOS) — cli) by Justin Hileman
+>>> $test = new App\Models\Test;
+=> App\Models\Test {#3246}
+>>> $test->text = "aaa";
+=> "aaa"
+>>> $test->save();
+=> true
+>>> App\Models\Test::all();
+=> Illuminate\Database\Eloquent\Collection {#3969
+     all: [
+       App\Models\Test {#3968
+         id: 1,
+         text: "aaa",
+         created_at: "2021-03-26 22:52:01",
+         updated_at: "2021-03-26 22:52:01",
+       },
+     ],
+   }
+>>> $test2 = new App\Models\Test;
+=> App\Models\Test {#4179}
+>>> $test2->text = "bbb";
+=> "bbb"
+>>> $test2->save();
+=> true
+>>> App\Models\Test::all();
+=> Illuminate\Database\Eloquent\Collection {#4183
+     all: [
+       App\Models\Test {#4184
+         id: 1,
+         text: "aaa",
+         created_at: "2021-03-26 22:52:01",
+         updated_at: "2021-03-26 22:52:01",
+       },
+       App\Models\Test {#4185
+         id: 2,
+         text: "bbb",
+         created_at: "2021-03-26 22:56:05",
+         updated_at: "2021-03-26 22:56:05",
+       },
+     ],
+   }
+```
