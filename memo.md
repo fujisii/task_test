@@ -190,3 +190,5 @@ Controller created successfully.
 ```
 
 ## 82. Laravel MVCモデルの記述方法1
+
+## 83. Laravel MVCモデルの記述方法2
