@@ -180,3 +180,13 @@ Psy Shell v0.9.12 (PHP 7.3.24-(to be removed in future macOS) — cli) by Justin
      ],
    }
 ```
+
+## 81. Laravel コントローラ
+
+```shell
+# コントローラを作成する
+$ php artisan make:controller TestController
+Controller created successfully.
+
+
+```
