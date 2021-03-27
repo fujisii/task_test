@@ -187,6 +187,6 @@ Psy Shell v0.9.12 (PHP 7.3.24-(to be removed in future macOS) — cli) by Justin
 # コントローラを作成する
 $ php artisan make:controller TestController
 Controller created successfully.
-
-
 ```
+
+## 82. Laravel MVCモデルの記述方法1
