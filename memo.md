@@ -200,3 +200,12 @@ Controller created successfully.
   - route, auth, app, bcrypt
   - collet, dd, env, factory, old, view, など
 - https://readouble.com/laravel/6.x/ja/helpers.html
+
+## 85. コレクション型
+
+- コレクション型とは配列を拡張した型
+- データベースからデータ取得時はコレクション型になっている
+- コレクション型専用の関数多数
+- メソッドチェーンで記述可能
+- all, chunk, get, pluck, whereln, toArray
+- https://readouble.com/laravel/6.x/ja/collections.html

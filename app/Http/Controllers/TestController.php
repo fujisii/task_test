@@ -13,10 +13,16 @@ class TestController extends Controller
     {
         $values = Test::all();
 
+        $collection = collect([1, 2, 3, 4, 5, 6, 7]);
+
+        $chunks = $collection->chunk(4);
+
+        $chunks->toArray();
+
         /**
          *  die + var_dump
          */
-        // dd($values);
+        dd($chunks);
 
         // compact関数
         // ・controllerからviewに渡すための変数
