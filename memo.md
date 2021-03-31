@@ -209,3 +209,11 @@ Controller created successfully.
 - メソッドチェーンで記述可能
 - all, chunk, get, pluck, whereln, toArray
 - https://readouble.com/laravel/6.x/ja/collections.html
+
+## 86. クエリビルダ
+
+- クエリをPHPで書ける
+- Select, where, groupbyなど
+- SQLに近い構文
+- DB::table(テーブル名)-> とつなぐ
+- https://readouble.com/laravel/6.x/ja/queries.html
