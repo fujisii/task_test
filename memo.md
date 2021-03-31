@@ -192,3 +192,11 @@ Controller created successfully.
 ## 82. Laravel MVCモデルの記述方法1
 
 ## 83. Laravel MVCモデルの記述方法2
+
+## 84. ヘルパ関数
+
+- ヘルパ関数とはLaravelが用意している便利な関数のこと
+- よく使うもの
+  - route, auth, app, bcrypt
+  - collet, dd, env, factory, old, view, など
+- https://readouble.com/laravel/6.x/ja/helpers.html
