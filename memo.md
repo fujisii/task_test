@@ -217,3 +217,16 @@ Controller created successfully.
 - SQLに近い構文
 - DB::table(テーブル名)-> とつなぐ
 - https://readouble.com/laravel/6.x/ja/queries.html
+
+## 87. ファサード
+
+- Facadeとはフランス語で「正面窓口」という意味
+- Auth, Blade, DB, File, Hash(パスワード関連, 暗号化関連), Gate(権限), Queue, Route
+- ファサードの設定はどこでされているか
+  - config/app.php
+    - provider
+    - aliases
+- Illuminate\Support\Facadesという場所について
+    - composerでインストールしているので、vendorフォルダに入っていく
+    - vender\laravel\framework\src\Illuminate\Support\Facades
+- https://readouble.com/laravel/6.x/ja/facades.html
