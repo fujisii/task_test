@@ -230,3 +230,10 @@ Controller created successfully.
     - composerでインストールしているので、vendorフォルダに入っていく
     - vender\laravel\framework\src\Illuminate\Support\Facades
 - https://readouble.com/laravel/6.x/ja/facades.html
+
+## 88. 起動処理 DIとサービスコンテナ
+
+- DI : 外部でインスタンス化して注入
+- サービスコンテナ : DIをまとめて担う
+- 参考URL
+  - https://qiita.com/namizatork/items/801da1d03dc322fad70c
